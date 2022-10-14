@@ -8,6 +8,8 @@ app.use(require('cors')());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.get('/', (req, res) => res.send('<h1>Server is Running!</h1>'));
+
 server.listen(process.env.PORT, () =>
     console.log('----Hey man leave her alone!----')
 );
